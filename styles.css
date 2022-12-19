@@ -1,0 +1,334 @@
+body{
+    width: 100vw;
+    height: 100vh;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+body, h1{
+    margin: 0px;
+    padding: 0px;
+}
+
+/************* Centering website content *************/
+
+.header-content,
+.hero-content,
+.testimonials-content,
+.quote-content,
+.cta-content,
+.footer-content{
+    max-width: 1000px;
+    min-width: 300px;
+
+    height: 100%;
+    
+    margin: auto;
+}
+
+/************* Colors and Font *************/
+
+.header,
+.hero,
+.footer{
+    background-color: #1f2937;
+}
+
+
+.header .logo h1{
+    color: #f9faf8;
+    
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.header-links a{
+    color: #e5e7eb;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.hero-content .text h1{
+    color: #f9faf8;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.hero-content .text p,
+.hero-content .text button{
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+.hero-content .image{
+    background-color: #6c6c6cf2;
+}
+
+.hero-content .text button{
+    background-color: #3882f6;
+}
+
+.testimonials-content h1{
+    color: #1f2937;
+    
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.cards .description p{
+    color: #1d1d1e;
+
+    font-weight: 400px;
+    font-size: 14px;
+} 
+
+.quote-section{
+    background-color: #e5e7eb;
+}
+
+.quote-content .quote{
+    color: #1f2937;
+
+    font-weight: 200;
+    font-style: italic;
+    font-size: 36px;
+}
+
+.quote-content .author{
+    color: #1f2937;
+
+    font-weight: 800;
+    font-size: 16px;
+}
+
+.cta-box,
+.cta-box button{
+    background-color: #3882f6;
+}
+
+.cta-box h1{
+    color: #f9faf8;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.cta-box p{
+    color: #e5e7eb;
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 8px;
+}
+
+.cta-box button {
+    color: #f9faf8;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0px;
+}
+
+.footer p{
+    color: #cdcdcd;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+/************* Layout adjustments *************/
+
+.container{
+    display: flex;
+    flex-direction: column;   
+    justify-content: space-between;
+
+    width: 100vw;
+}
+
+.header-content{
+    height: 78px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0px 15px
+}
+
+.header-links ul{
+    display: flex;
+    justify-content: space-around;
+
+    gap: 4px;
+}
+
+.header-links li{
+    list-style: none;    
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+/* Centre */
+
+.hero{
+    height: 520px;
+    width: auto;
+    padding: 15px;
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+}
+
+.hero-content .text{
+    max-width: 450px;
+    margin: 5px 15px;
+
+    flex: 1 1 280px;
+}
+
+.hero-content .text .sign-up-btn,
+.cta-box .cta-right  button{
+    width: 120px;
+    height: 40px;
+
+    border-radius: 6px;
+    border-width: 0;
+    border-color:#475d7c;
+
+    font-size: 100%;
+
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+
+.cta-box .cta-right  button{
+    border: solid white 2px;
+}
+
+.hero-content .image{
+    margin: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* width: 400px; */
+    min-width: 338px;
+    max-width: 480px;
+
+    height: 250px; 
+    min-height: 150px;
+    max-height: 300px;
+
+    flex: 1 0.3 auto;
+}
+
+.hero-content .image p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Information */
+
+.testimonials-content{
+    margin: 25px auto;
+    padding: 25px 0px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonials-content .title{
+    padding: 15px 0px;
+    text-align: center;
+
+}
+
+.all-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+
+.cards{
+    width: 150px;
+    height: 220px;
+    margin: 15px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards .image{
+    width: 130px;
+    height: 130px;
+
+    border-color: #3882f6;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 10px;
+}
+
+.cards .description{
+    text-align: center;
+}
+
+.quote-section{
+    padding: 70px;
+}
+
+.quote-content{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    padding: 0px;
+}
+
+.quote{
+    margin:0px;
+    padding: 0px;
+    text-align: justify;
+}
+
+.cta-content{
+    padding: 70px;
+}
+
+.cta-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 70px;
+    border-radius: 8px;
+
+}
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/************* animation and effects *************/
+
+.header-links li:hover{
+    background-color: #475d7c
+}
